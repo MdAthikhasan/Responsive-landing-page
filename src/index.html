@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="./output/output.css" />
+  </head>
+  <!-- <style>
+    @keyframes smooth {
+      0% {
+        transform: scale(1.1);
+        opacity: 0.5;
+      }
+      100% {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+
+    .animate-smooth {
+      animation: smooth 1s linear;
+    }
+  </style> -->
+
+  <body>
+    <section>
+      <div class="w-full h-screen bg-[#37517E]">
+        <div class="container relative mx-auto">
+          <header>
+            <div class="flex justify-between items-center py-4 text-white">
+              <a href="">
+                <h1 class="text-3xl font-medium text-[#ffffff]">ARSHA</h1>
+              </a>
+
+              <nav class="flex justify-between items-center">
+                <ul class="hidden xl:flex justify-between gap-x-8 items-center">
+                  <li class="nav-item">
+                    <a href="">Home</a>
+                  </li>
+                  <li class="mr-1 nav-item"><a href="">About</a></li>
+                  <li class="nav-item"><a href="">Service</a></li>
+                  <li class="nav-item"><a href="">Portfolio</a></li>
+                  <li class="nav-item"><a href="">Team</a></li>
+                  <li class="nav-item"><a href="">Pricing</a></li>
+                  <li class="relative group nav-item">
+                    <a class="flex items-center justify-center" href="">
+                      Dropdown
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="size-4 mt-1 ml-1"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="m19.5 8.25-7.5 7.5-7.5-7.5"
+                        />
+                      </svg>
+                    </a>
+                    <ul
+                      class="opacity-2 transform scale-y-0 group-hover:opacity-100 group-hover:scale-y-100 transition-transform duration-300 ease-in-out bg-white flex flex-col gap-3 text-black absolute mt-1 py-2 pl-2 pr-20 rounded shadow-lg origin-top"
+                    >
+                      <li class="nav-item"><a href="">Dropdown</a></li>
+                      <li class="nav-item"><a href="">Dropdown</a></li>
+                      <li class="nav-item"><a href="">Dropdown</a></li>
+                      <li class="nav-item"><a href="">Dropdown</a></li>
+                      <li class="nav-item"><a href="">Dropdown</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item"><a href="">Contact</a></li>
+                </ul>
+                <a
+                  class="btn-primary ml-8 sm:text-base hover:transition ease-in duration-300"
+                  href=""
+                  >Get Started</a
+                >
+                <button id="toggle-btn">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-8 xl:hidden ml-4"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                    />
+                  </svg>
+                </button>
+              </nav>
+            </div>
+          </header>
+          <!-- hero section start -->
+          <div class="flex justify-between items-center text-white">
+            <div class="animate-smooth">
+              <h1 class="text-5xl font-bold leading-12">
+                Better Solutions For Your Business
+              </h1>
+              <p class="font-semibold text-2xl my-6">
+                We are team of talented designers making websites with Bootstrap
+              </p>
+              <div class="flex items-center">
+                <button
+                  class="btn-primary hover:transition duration-300 ease-in"
+                >
+                  Get Started</button
+                ><a
+                  class="flex items-center ml-4 hover:text-blue-300 hover:transition ease-in duration-300 cursor-pointer"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-8"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+                    />
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M15.91 11.672a.375.375 0 0 1 0 .656l-5.603 3.113a.375.375 0 0 1-.557-.328V8.887c0-.286.307-.466.557-.327l5.603 3.112Z"
+                    />
+                  </svg>
+                  <span class="ml-2"> Watch Video</span>
+                </a>
+              </div>
+            </div>
+
+            <div class="">
+              <img class="animate-smooth" src="./images/hero-img.png" alt="" />
+            </div>
+          </div>
+          <!-- hero section end -->
+        </div>
+      </div>
+    </section>
+    <!-- section tow start -->
+    <section>
+      <div class="w-full bg-[#F5F6F8]">
+        <div
+          class="img-container animate-scale_up container flex items-center overflow-hidden whitespace-nowrap"
+        >
+          <div class="img-box animate-scrollver flex items-center py-5">
+            <div class="scrooling-img">
+              <img src="./images/client-1.png" alt="" />
+            </div>
+            <div class="scrooling-img">
+              <img src="./images/client-3.png" alt="" />
+            </div>
+            <div class="scrooling-img">
+              <img src="./images/client-5.png" alt="" />
+            </div>
+            <div class="scrooling-img">
+              <img src="./images/client-6.png" alt="" />
+            </div>
+            <div class="scrooling-img">
+              <img src="./images/client-7.png" alt="" />
+            </div>
+            <div class="scrooling-img">
+              <img src="./images/client-8.png" alt="" />
+            </div>
+            <div class="scrooling-img">
+              <img src="./images/client-4.png" alt="" />
+            </div>
+            <div class="scrooling-img">
+              <img src="./images/client-2.png " alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- sectin tow end -->
+
+    <!-- section three strat -->
+    <section>
+      <div class="container py-14">
+        <h1
+          class="text-center animate-downUp text-[#37517e] text-3xl font-bold uppercase"
+        >
+          about us
+        </h1>
+        <div class="flex justify-between mt-14 items-center">
+          <div class="w-[45%] animate-downUp">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+
+            <div class="mt-7">
+              <div class="flex my-3">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+                  />
+                </svg>
+
+                <span class="ml-2">
+                  Ullamco laboris nisi ut aliquip ex ea commodo consequat.</span
+                >
+              </div>
+              <div class="flex my-3">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+                  />
+                </svg>
+
+                <span class="ml-2">
+                  Ullamco laboris nisi ut aliquip ex ea commodo consequat.</span
+                >
+              </div>
+              <div class="flex my-3">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+                  />
+                </svg>
+
+                <span class="ml-2">
+                  Ullamco laboris nisi ut aliquip ex ea commodo consequat.</span
+                >
+              </div>
+            </div>
+          </div>
+          <div class="w-[45%] animate-downUp">
+            <p>
+              Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+              irure dolor in reprehenderit in voluptate velit esse cillum dolore
+              eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+              proident, sunt in culpa qui officia deserunt mollit anim id est
+              laborum.
+            </p>
+            <button
+              class="flex justify-between items-center border-2 border-[#47B2E4] text-[#47B2E4] hover:bg-[#47B2E4] hover:text-white py-2 px-6 transition duration-150 ease-linear rounded-md mt-6 group"
+            >
+              <span> Read more</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-5 ml-1 mt-1 transform transition-transform group-hover:translate-x-1.5"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- section three end -->
+
+    <!-- section four start -->
+    <section class="bg-[#F5F6F8]">
+      <div class="container flex justify-between items-center bg-[]">
+        <div class="w-[55%] py-10">
+          <h1 class="text-4xl font-normal text-[#37517E]">
+            Eum ipsam laborum deleniti
+            <strong class="font-extrabold text-[#37517E]">
+              velit pariatur architecto aut nihil</strong
+            >
+          </h1>
+          <p class="my-4">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis
+            aute irure dolor in reprehenderit
+          </p>
+          <div class="mb-2">
+            <div
+              class="accordien-container p-4 flex justify-between items-center cursor-pointer hover:text-blue-600 transition ease-linear duration-100 bg-white text-[#37517E]"
+            >
+              <span class="">
+                <span class="text-blue-600 font-bold">01</span> Non consectetur
+                a erat nam at lectus urna duis?</span
+              >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="m8.25 4.5 7.5 7.5-7.5 7.5"
+                />
+              </svg>
+            </div>
+
+            <!-- class="accordien-box transform scale-y-0 px-4 bg-white" -->
+            <div
+              class="accordien-box max-h-0 overflow-hidden transition-all duration-300 px-4 bg-white"
+            >
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus
+              asperiores laboriosam odio soluta distinctio tempore minima odit.
+              Ex, perspiciatis possimus.
+            </div>
+          </div>
+          <div class="mb-2">
+            <div
+              class="accordien-container p-4 flex justify-between items-center cursor-pointer hover:text-blue-600 transition ease-linear duration-100 bg-white text-[#37517E]"
+            >
+              <span class="">
+                <span class="text-blue-600 font-bold">01</span> Non consectetur
+                a erat nam at lectus urna duis?</span
+              >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="m8.25 4.5 7.5 7.5-7.5 7.5"
+                />
+              </svg>
+            </div>
+
+            <!-- class="accordien-box transform scale-y-0 px-4 bg-white" -->
+            <div
+              class="accordien-box animat max-h-0 overflow-hidden transition-all duration-300 px-4 bg-white"
+            >
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus
+              asperiores laboriosam odio soluta distinctio tempore minima odit.
+              Ex, perspiciatis possimus.
+            </div>
+          </div>
+          <div class="mb-2">
+            <div
+              class="accordien-container p-4 flex justify-between items-center cursor-pointer hover:text-blue-600 transition ease-linear duration-100 bg-white text-[#37517E]"
+            >
+              <span class="">
+                <span class="text-blue-600 font-bold">01</span> Non consectetur
+                a erat nam at lectus urna duis?</span
+              >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="m8.25 4.5 7.5 7.5-7.5 7.5"
+                />
+              </svg>
+            </div>
+
+            <!-- class="accordien-box transform scale-y-0 px-4 bg-white" -->
+            <div
+              class="accordien-box max-h-0 overflow-hidden transition-all duration-300 px-4 bg-white"
+            >
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus
+              asperiores laboriosam odio soluta distinctio tempore minima odit.
+              Ex, perspiciatis possimus.
+            </div>
+          </div>
+        </div>
+        <div class="w-[30%]">
+          <img class="animate-scale_up" src="./images/why-us.png" alt="" />
+        </div>
+      </div>
+    </section>
+    <!-- section four end -->
+    <!-- section five start  -->
+
+    <section>
+      <div class="container flex justify-between items-center py-14">
+        <div class="w-[45%]"><img src="./images/skills.png" alt="" /></div>
+        <div class="w-[45%]">
+          <h1 class="text-4xl font-bold text-[#37517e]">
+            Voluptatem dignissimos provident quasi corporis voluptas .
+          </h1>
+          <p class="italic my-3">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua
+          </p>
+          <div class="mb-3">
+            <div class="flex justify-between items-center mb-2">
+              <span class="uppercase text-xs font-medium text-[#37517e]"
+                >html</span
+              >
+              <span class="uppercase text-xs font-medium text-[#37517e]"
+                >100%</span
+              >
+            </div>
+            <div class="w-full progress-bar h-[10px] bg-[#EBEDF2]">
+              <div
+                class="w-12/12 h-full relative before:absolute before:left-0 before:top-0 before:w-full before:h-full before:animate-progress before:bg-[#37517E]"
+              ></div>
+            </div>
+          </div>
+          <div class="mb-3">
+            <div class="flex justify-between items-center mb-2">
+              <span class="uppercase text-xs font-medium text-[#37517e]"
+                >css</span
+              >
+              <span class="uppercase text-xs font-medium text-[#37517e]"
+                >90%</span
+              >
+            </div>
+
+            <div class="w-full progress-bar h-[10px] bg-[#EBEDF2]">
+              <div
+                class="w-3/12 h-full relative before:absolute before:left-0 before:top-0 before:w-full before:h-full before:animate-progress before:bg-[#37517E]"
+              ></div>
+            </div>
+          </div>
+          <div class="mb-3">
+            <div class="flex justify-between items-center mb-2">
+              <span class="uppercase text-xs font-medium text-[#37517e]"
+                >javascript</span
+              >
+              <span class="uppercase text-xs font-medium text-[#37517e]"
+                >90%</span
+              >
+            </div>
+
+            <div class="w-full progress-bar h-[10px] bg-[#EBEDF2]">
+              <div
+                class="w-5/12 h-full relative before:absolute before:left-0 before:top-0 before:w-full before:h-full before:animate-progress before:bg-[#37517E]"
+              ></div>
+            </div>
+          </div>
+          <div class="mb-3">
+            <div class="flex justify-between items-center mb-2">
+              <span class="uppercase text-xs font-medium text-[#37517e]"
+                >react</span
+              >
+              <span class="uppercase text-xs font-medium text-[#37517e]"
+                >90%</span
+              >
+            </div>
+
+            <div class="w-full h-[10px] bg-[#EBEDF2]">
+              <div
+                class="w-10/12 h-full relative before:absolute before:left-0 before:top-0 before:w-full before:h-full before:animate-progress before:bg-[#37517E]"
+              ></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- section five end -->
+    <!-- section six stats -->
+    <section class="bg-[#F5F6F8]">
+      <div class="container py-16">
+        <h1
+          class="text-center animate-downUp text-[#37517e] text-3xl font-bold uppercase"
+        >
+          seivices
+        </h1>
+        <p class="text-center py-5 text-lg">
+          Necessitatibus eius consequatur ex aliquid fuga eum quidem sint
+          consectetur velit
+        </p>
+
+        <div class="flex justify-between items-center gap-x-6 mt-4">
+          <div
+            class="group bg-[#FFFFFF] hover:-translate-y-3 transition-transform duration-300 ease-linear drop-shadow-2xl px-5 py-7"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M13.5 21v-7.5a.75.75 0 0 1 .75-.75h3a.75.75 0 0 1 .75.75V21m-4.5 0H2.36m11.14 0H18m0 0h3.64m-1.39 0V9.349M3.75 21V9.349m0 0a3.001 3.001 0 0 0 3.75-.615A2.993 2.993 0 0 0 9.75 9.75c.896 0 1.7-.393 2.25-1.016a2.993 2.993 0 0 0 2.25 1.016c.896 0 1.7-.393 2.25-1.015a3.001 3.001 0 0 0 3.75.614m-16.5 0a3.004 3.004 0 0 1-.621-4.72l1.189-1.19A1.5 1.5 0 0 1 5.378 3h13.243a1.5 1.5 0 0 1 1.06.44l1.19 1.189a3 3 0 0 1-.621 4.72M6.75 18h3.75a.75.75 0 0 0 .75-.75V13.5a.75.75 0 0 0-.75-.75H6.75a.75.75 0 0 0-.75.75v3.75c0 .414.336.75.75.75Z"
+              />
+            </svg>
+            <h1 class="group-hover:text-[#37517e] font-bold text-xl py-5">
+              Lorem isput
+            </h1>
+            <p class="">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum,
+              consectetur.
+            </p>
+          </div>
+          <div
+            class="group bg-[#FFFFFF] hover:-translate-y-3 transition-transform duration-150 ease-in drop-shadow-2xl px-5 py-7"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M13.5 21v-7.5a.75.75 0 0 1 .75-.75h3a.75.75 0 0 1 .75.75V21m-4.5 0H2.36m11.14 0H18m0 0h3.64m-1.39 0V9.349M3.75 21V9.349m0 0a3.001 3.001 0 0 0 3.75-.615A2.993 2.993 0 0 0 9.75 9.75c.896 0 1.7-.393 2.25-1.016a2.993 2.993 0 0 0 2.25 1.016c.896 0 1.7-.393 2.25-1.015a3.001 3.001 0 0 0 3.75.614m-16.5 0a3.004 3.004 0 0 1-.621-4.72l1.189-1.19A1.5 1.5 0 0 1 5.378 3h13.243a1.5 1.5 0 0 1 1.06.44l1.19 1.189a3 3 0 0 1-.621 4.72M6.75 18h3.75a.75.75 0 0 0 .75-.75V13.5a.75.75 0 0 0-.75-.75H6.75a.75.75 0 0 0-.75.75v3.75c0 .414.336.75.75.75Z"
+              />
+            </svg>
+            <h1 class="group-hover:text-[#37517e] font-bold text-xl py-5">
+              Lorem isput
+            </h1>
+            <p class="">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum,
+              consectetur.
+            </p>
+          </div>
+          <div
+            class="group bg-[#FFFFFF] hover:-translate-y-3 transition-transform duration-150 ease-in drop-shadow-2xl px-5 py-7"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M13.5 21v-7.5a.75.75 0 0 1 .75-.75h3a.75.75 0 0 1 .75.75V21m-4.5 0H2.36m11.14 0H18m0 0h3.64m-1.39 0V9.349M3.75 21V9.349m0 0a3.001 3.001 0 0 0 3.75-.615A2.993 2.993 0 0 0 9.75 9.75c.896 0 1.7-.393 2.25-1.016a2.993 2.993 0 0 0 2.25 1.016c.896 0 1.7-.393 2.25-1.015a3.001 3.001 0 0 0 3.75.614m-16.5 0a3.004 3.004 0 0 1-.621-4.72l1.189-1.19A1.5 1.5 0 0 1 5.378 3h13.243a1.5 1.5 0 0 1 1.06.44l1.19 1.189a3 3 0 0 1-.621 4.72M6.75 18h3.75a.75.75 0 0 0 .75-.75V13.5a.75.75 0 0 0-.75-.75H6.75a.75.75 0 0 0-.75.75v3.75c0 .414.336.75.75.75Z"
+              />
+            </svg>
+            <h1 class="group-hover:text-[#37517e] font-bold text-xl py-5">
+              Lorem isput
+            </h1>
+            <p class="">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum,
+              consectetur.
+            </p>
+          </div>
+          <div
+            class="group bg-[#FFFFFF] hover:-translate-y-3 transition-transform duration-150 ease-in drop-shadow-2xl px-5 py-7"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M13.5 21v-7.5a.75.75 0 0 1 .75-.75h3a.75.75 0 0 1 .75.75V21m-4.5 0H2.36m11.14 0H18m0 0h3.64m-1.39 0V9.349M3.75 21V9.349m0 0a3.001 3.001 0 0 0 3.75-.615A2.993 2.993 0 0 0 9.75 9.75c.896 0 1.7-.393 2.25-1.016a2.993 2.993 0 0 0 2.25 1.016c.896 0 1.7-.393 2.25-1.015a3.001 3.001 0 0 0 3.75.614m-16.5 0a3.004 3.004 0 0 1-.621-4.72l1.189-1.19A1.5 1.5 0 0 1 5.378 3h13.243a1.5 1.5 0 0 1 1.06.44l1.19 1.189a3 3 0 0 1-.621 4.72M6.75 18h3.75a.75.75 0 0 0 .75-.75V13.5a.75.75 0 0 0-.75-.75H6.75a.75.75 0 0 0-.75.75v3.75c0 .414.336.75.75.75Z"
+              />
+            </svg>
+            <h1 class="group-hover:text-[#37517e] font-bold text-xl py-5">
+              Lorem isput
+            </h1>
+            <p class="">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum,
+              consectetur.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- section six ends -->
+    <!-- section seven starts -->
+
+    <section>
+      <div
+        class="relative w-full bg-[#37588C] h-screen bg-fixed bg-cover bg-center"
+        style="background-image: url(./images/cta-bg.jpg)"
+      >
+        <div class="absolute inset-0 bg-black opacity-50"></div>
+        <!-- Overlay -->
+        <div
+          class="container animate-scale_up flex justify-between items-center h-1/2 relative"
+        >
+          <div class="w-3/4 text-white">
+            <h1 class="text-3xl font-bold my-2">Call To Action</h1>
+            <p>
+              Duis aute irure dolor in reprehenderit in voluptate velit esse
+              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+              cupidatat non proident, sunt in culpa qui officia deserunt mollit
+              anim id est laborum.
+            </p>
+            aass
+          </div>
+          <div class="w-1/4">
+            <button
+              class="block mx-auto rounded-full border text-xl font-medium border-white hover:bg-[#37588C] transition duration-300 hover:border-none text-white px-8 py-3"
+            >
+              Go to action
+            </button>
+          </div>
+        </div>
+        <div class="h-full bg-white">Hi</div>
+      </div>
+    </section>
+    <!-- section seven end -->
+    <script src="../index.js"></script>
+  </body>
+</html>

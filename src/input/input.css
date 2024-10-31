@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .nav-item {
+    @apply hover:text-[#47b2e4] list-none no-underline;
+  }
+  .btn-primary {
+    @apply py-2 px-6 bg-[#47B2E4] text-white font-semibold rounded-full shadow-md hover:bg-[#91d1ef] focus:outline-none focus:ring focus:ring-violet-400 focus:ring-opacity-75;
+  }
+  .nav-item {
+    @apply hover:transition duration-300 ease-in hover:text-[#47b2e4];
+  }
+  .scrooling-img {
+    @apply inline-block w-[95px] mr-[140px] hover:scale-105 transition duration-200 ease-linear;
+  }
+  /* .menu-toggle {
+    @apply w-full    hidden flex-col items-start  gap-8 absolute top-[95%] left-0 p-4 rounded text-black  bg-white;
+  } */
+}
