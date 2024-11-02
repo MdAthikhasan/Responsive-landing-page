@@ -37,6 +37,18 @@ nodeList.forEach((e) =>
     }
   })
 );
+const copy_img_hover_box = document
+  .querySelector(".img-hover-box")
+  .cloneNode(true);
+document.querySelector(".hover-box-container").appendChild(copy_img_hover_box);
+
+const gridContainer = document.querySelector(".grid-container");
+const gridItemTemplate = document.querySelector(".grid-item").cloneNode(true);
+
+for (let i = 0; i < 3; i++) {
+  const gridItem = gridItemTemplate.cloneNode(true);
+  gridContainer.appendChild(gridItem);
+}
 
 document.addEventListener("DOMContentLoaded", function () {
   const progressBar = document.querySelector(".progress-bar");
@@ -53,4 +65,23 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   observer.observe(progressBar);
+});
+
+var listContainer = document.getElementById("list-holder");
+
+// Get all buttons with class="btn" inside the container
+var ul_items = listContainer.getElementsByClassName("ul-item");
+
+// Loop through the buttons and add the active class to the current/clicked button
+for (var i = 0; i < ul_items.length; i++) {
+  ul_items[i].addEventListener("click", function () {
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace("active", "");
+    this.className += " active";
+  });
+}
+
+const dots = document.querySelectorAll(".dot");
+dots.forEach((dot) => {
+  dot.addEventListener("click", () => {});
 });

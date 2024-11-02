@@ -15,6 +15,13 @@
   .scrooling-img {
     @apply inline-block w-[95px] mr-[140px] hover:scale-105 transition duration-200 ease-linear;
   }
+  .active,
+  .li-class {
+    @apply rounded-full bg-[#37517E] px-5 py-2 transition duration-300 ease-in-out text-white cursor-pointer;
+  }
+  .img-container-class {
+    @apply relative cursor-pointer  overflow-hidden;
+  }
   /* .menu-toggle {
     @apply w-full    hidden flex-col items-start  gap-8 absolute top-[95%] left-0 p-4 rounded text-black  bg-white;
   } */

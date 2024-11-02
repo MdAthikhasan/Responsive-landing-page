@@ -5,23 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="./output/output.css" />
-  </head>
-  <!-- <style>
-    @keyframes smooth {
-      0% {
-        transform: scale(1.1);
-        opacity: 0.5;
-      }
-      100% {
-        transform: scale(1);
-        opacity: 1;
-      }
-    }
 
-    .animate-smooth {
-      animation: smooth 1s linear;
-    }
-  </style> -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-xm+9p7IFz3jI3n1Q9I+CfJ6d0Z5EgHhOR8G9TQwDBCEZGG9I3iOQv7m9Q5sAlSV4zO4Jeq0f8JESqOLyZpCCTQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
 
   <body>
     <section>
@@ -98,7 +90,9 @@
             </div>
           </header>
           <!-- hero section start -->
-          <div class="flex justify-between items-center text-white">
+          <div
+            class="flex lg:flex-row flex-col-reverse justify-between items-center gap-6 text-white"
+          >
             <div class="animate-smooth">
               <h1 class="text-5xl font-bold leading-12">
                 Better Solutions For Your Business
@@ -191,8 +185,10 @@
         >
           about us
         </h1>
-        <div class="flex justify-between mt-14 items-center">
-          <div class="w-[45%] animate-downUp">
+        <div
+          class="flex lg:flex-row flex-col justify-between gap-5 mt-14 items-center"
+        >
+          <div class="animate-downUp">
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -261,13 +257,12 @@
               </div>
             </div>
           </div>
-          <div class="w-[45%] animate-downUp">
+          <div class="animate-downUp">
             <p>
               Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
               irure dolor in reprehenderit in voluptate velit esse cillum dolore
-              eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-              proident, sunt in culpa qui officia deserunt mollit anim id est
-              laborum.
+              eu nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
             </p>
             <button
               class="flex justify-between items-center border-2 border-[#47B2E4] text-[#47B2E4] hover:bg-[#47B2E4] hover:text-white py-2 px-6 transition duration-150 ease-linear rounded-md mt-6 group"
@@ -296,8 +291,10 @@
 
     <!-- section four start -->
     <section class="bg-[#F5F6F8]">
-      <div class="container flex justify-between items-center bg-[]">
-        <div class="w-[55%] py-10">
+      <div
+        class="container flex lg:flex-row flex-col-reverse justify-between items-center bg-[]"
+      >
+        <div class="lg:w-[55%] py-10">
           <h1 class="text-4xl font-normal text-[#37517E]">
             Eum ipsam laborum deleniti
             <strong class="font-extrabold text-[#37517E]">
@@ -409,7 +406,7 @@
             </div>
           </div>
         </div>
-        <div class="w-[30%]">
+        <div class="lg:w-[30%]">
           <img class="animate-scale_up" src="./images/why-us.png" alt="" />
         </div>
       </div>
@@ -418,9 +415,11 @@
     <!-- section five start  -->
 
     <section>
-      <div class="container flex justify-between items-center py-14">
-        <div class="w-[45%]"><img src="./images/skills.png" alt="" /></div>
-        <div class="w-[45%]">
+      <div
+        class="container flex lg:flex-row flex-col justify-between items-center gap-5 py-14"
+      >
+        <div class=""><img src="./images/skills.png" alt="" /></div>
+        <div class="">
           <h1 class="text-4xl font-bold text-[#37517e]">
             Voluptatem dignissimos provident quasi corporis voluptas .
           </h1>
@@ -508,7 +507,9 @@
           consectetur velit
         </p>
 
-        <div class="flex justify-between items-center gap-x-6 mt-4">
+        <div
+          class="flex lg:flex-row flex-col justify-between items-center gap-6 mt-4"
+        >
           <div
             class="group bg-[#FFFFFF] hover:-translate-y-3 transition-transform duration-300 ease-linear drop-shadow-2xl px-5 py-7"
           >
@@ -620,10 +621,10 @@
         class="relative w-full bg-[#37588C] h-screen bg-fixed bg-cover bg-center"
         style="background-image: url(./images/cta-bg.jpg)"
       >
-        <div class="absolute inset-0 bg-black opacity-50"></div>
+        <!-- <div class="absolute inset-0 bg-black opacity-50"></div> -->
         <!-- Overlay -->
         <div
-          class="container animate-scale_up flex justify-between items-center h-1/2 relative"
+          class="container animate-scale_up flex md:flex-row flex-col justify-between items-center h-1/2 relative"
         >
           <div class="w-3/4 text-white">
             <h1 class="text-3xl font-bold my-2">Call To Action</h1>
@@ -643,10 +644,544 @@
             </button>
           </div>
         </div>
-        <div class="h-full bg-white">Hi</div>
+        <div class="h-full bg-white">
+          <div class="container">
+            <div class="text-center">
+              <h1 class="text-3xl py-16 font-bold text-[#37517E]">
+                PORTFOLLIO
+              </h1>
+              <p class="text-lg mb-16">
+                Necessitatibus eius consequatur ex aliquid fuga eum quidem sint
+                consectetur evit
+              </p>
+              <ul
+                id="list-holder"
+                class="flex justify-center items-center gap-x-5 mb-3"
+              >
+                <li class="ul-item px-5 py-2 active hover:li-class">App</li>
+                <li class="ul-item px-5 py-2 hover:li-class">Card</li>
+                <li class="ul-item px-5 py-2 hover:li-class">All</li>
+                <li class="ul-item px-5 py-2 hover:li-class">Web</li>
+              </ul>
+            </div>
+            <div class="flex justify-between items-center gap-3">
+              <div class="flex flex-col gap-3">
+                <div class="img-container-class group">
+                  <img
+                    class="cursor-pointer"
+                    src="./images/masonry-portfolio-1.jpg"
+                    alt=""
+                  />
+                  <div
+                    class="img-hover-box bg-white absolute -bottom-26 left-0 w-full h-26 flex items-center justify-between p-2 transition-all duration-300 group-hover:bottom-0"
+                  >
+                    <div>
+                      <h1 class="font-bold">App 1</h1>
+                      <p class="">Lorem ispum,dolar sit</p>
+                    </div>
+                    <div class="flex">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="size-7 mr-2"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607ZM10.5 7.5v6m3-3h-6"
+                        />
+                      </svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="size-7"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M15.75 9V5.25A2.25 2.25 0 0 0 13.5 3h-6a2.25 2.25 0 0 0-2.25 2.25v13.5A2.25 2.25 0 0 0 7.5 21h6a2.25 2.25 0 0 0 2.25-2.25V15m3 0 3-3m0 0-3-3m3 3H9"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <div class="img-container-class group hover-box-container">
+                  <img
+                    class="cursor-pointer"
+                    src="./images/masonry-portfolio-6.jpg"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="flex flex-col gap-3">
+                <div class="img-container-class group hover-box-container">
+                  <img src="./images/masonry-portfolio-2.jpg" alt="" />
+                </div>
+
+                <div class="img-container-class group hover-box-container">
+                  <img src="./images/masonry-portfolio-5.jpg" alt="" />
+                </div>
+                <div class="img-container-class group hover-box-container">
+                  <img src="./images/masonry-portfolio-9.jpg" alt="" />
+                </div>
+              </div>
+              <div class="flex flex-col gap-3">
+                <div class="img-container-class group hover-box-container">
+                  <img src="./images/masonry-portfolio-3.jpg" alt="" />
+                </div>
+                <div class="img-container-class group hover-box-container">
+                  <img src="./images/masonry-portfolio-4.jpg" alt="" />
+                </div>
+                <div class="img-container-class group hover-box-container">
+                  <img src="./images/masonry-portfolio-7.jpg" alt="" />
+                </div>
+                <div class="img-container-class group hover-box-container">
+                  <img src="./images/masonry-portfolio-8.jpg" alt="" />
+                </div>
+              </div>
+            </div>
+            <section class="bg-white">
+              <div class="container">
+                <div class="text-center">
+                  <h1 class="text-3xl py-16 font-bold text-[#37517E]">TEAM</h1>
+                  <p class="text-lg mb-16">
+                    Necessitatibus eius consequatur ex aliquid fuga eum quidem
+                    sint consectetur evit
+                  </p>
+                </div>
+                <div
+                  class="grid-container grid grid-cols-1 lg:grid-cols-2 gap-5"
+                >
+                  <div
+                    class="grid-item cursor-pointer flex flex-col md:flex-row justify-between items-center p-5 shadow-2xl transform hover:-translate-y-2 hover:transition duration-150 ease-in-out"
+                  >
+                    <div class="rounded-full w-1/4">
+                      <img
+                        class="rounded-full"
+                        src="./images/team-1.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="w-3/4 md:text-start text-center ml-4">
+                      <h1 class="text-3xl font-bold text-[#37517E]">
+                        Walter White
+                      </h1>
+                      <h2>Chief Executive Officer</h2>
+                      <p class="mt-3">
+                        Explicabo voluptatem mollitia et repellat qui dolorum
+                        quasi
+                      </p>
+                      <div
+                        class="flex w-[150px] md:ml-0 mx-auto justify-between items-center mt-2"
+                      >
+                        <svg
+                          class="size-7"
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 512 512"
+                        >
+                          <!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                          <path
+                            d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5V334.2H141.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287V510.1C413.8 494.8 512 386.9 512 256h0z"
+                          />
+                        </svg>
+                        <svg
+                          class="size-7"
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 512 512"
+                        >
+                          <!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                          <path
+                            d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5V334.2H141.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287V510.1C413.8 494.8 512 386.9 512 256h0z"
+                          />
+                        </svg>
+                        <svg
+                          class="size-7"
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 512 512"
+                        >
+                          <!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                          <path
+                            d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5V334.2H141.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287V510.1C413.8 494.8 512 386.9 512 256h0z"
+                          />
+                        </svg>
+                        <svg
+                          class="size-7"
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 512 512"
+                        >
+                          <path
+                            d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5V334.2H141.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287V510.1C413.8 494.8 512 386.9 512 256h0z"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <!-- section nine start -->
+            <section>
+              <div>
+                <div class="text-center">
+                  <h1 class="text-3xl py-16 font-bold text-[#37517E]">
+                    TESTOMONIALS
+                  </h1>
+                  <p class="">
+                    Necessitatibus eius consequatur ex aliquid fuga eum quidem
+                    sint consectetur evit
+                  </p>
+                </div>
+                <div class="p-16">
+                  <div class="w-5/6 mx-auto overflow-hidden">
+                    <div class="tes-item transform text-center mx-auto">
+                      <div class="rounded-full">
+                        <img
+                          class="rounded-full w-[100px] mx-auto"
+                          src="./images/team-1.jpg"
+                          alt=""
+                        />
+                        <h1 class="text-lg my-3 font-bold text-[#37517E]">
+                          Tanvir Ahmed
+                        </h1>
+                        <p>Designer</p>
+                        <div class="my-4 text-2xl text-orange-400">★★★★★</div>
+                        <p class="my-5">
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Vero aliquid doloribus facilis ducimus nihil,
+                          cum itaque illo amet laboriosam fugiat incidunt quas
+                          tempore reiciendisv illo amet laboriosam fugiat
+                          incidunt quas tempore reiciendis
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="flex gap-x-2 justify-center items-center">
+                    <span class="p-[6px] rounded-full bg-[#47B2E4] dot"></span>
+                    <span class="p-[6px] rounded-full bg-[#47B2E4] dot"></span>
+                    <span class="p-[6px] rounded-full bg-[#47B2E4] dot"></span>
+                    <span class="p-[6px] rounded-full bg-[#47B2E4] dot"></span>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <!-- section nine end -->
+            <!-- section ten start -->
+            <!-- Contact Section -->
+            <section class="py-16 bg-gray-50">
+              <div class="container mx-auto px-4">
+                <!-- Section Header -->
+                <div class="text-center mb-10">
+                  <h2 class="text-4xl font-bold text-blue-900">Contact</h2>
+                  <p class="text-gray-500 mt-2">
+                    Necessitatibus eius consequatur ex aliquid fuga eum quidem
+                    sint consectetur velit
+                  </p>
+                  <div class="w-24 h-1 bg-blue-400 mx-auto mt-4"></div>
+                </div>
+
+                <!-- Contact Content -->
+                <div
+                  class="w-full h-full border flex flex-col lg:flex-row justify-between gap-6"
+                >
+                  <!-- Contact Info -->
+                  <div
+                    class="w-full lg:w-1/2 bg-white rounded-lg shadow-md p-8"
+                  >
+                    <!-- Address -->
+                    <div class="flex items-center mb-6">
+                      <div class="flex-shrink-0 bg-blue-100 p-3 rounded-full">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="h-6 w-6 text-blue-500"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M12 10c-3.9 0-7 3.1-7 7s3.1 7 7 7 7-3.1 7-7-3.1-7-7-7zM12 0c-5.5 0-10 4.5-10 10s4.5 10 10 10 10-4.5 10-10S17.5 0 12 0z"
+                          />
+                        </svg>
+                      </div>
+                      <div class="ml-4">
+                        <h4 class="text-lg font-semibold text-blue-900">
+                          Address
+                        </h4>
+                        <p class="text-gray-500">
+                          A108 Adam Street, New York, NY 535022
+                        </p>
+                      </div>
+                    </div>
+                    <!-- Phone -->
+                    <div class="flex items-center mb-6">
+                      <div class="flex-shrink-0 bg-blue-100 p-3 rounded-full">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="h-6 w-6 text-blue-500"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M3 5h4l2 8H5l-2-8zm5 11a2 2 0 110 4 2 2 0 010-4zm10-11v4m0 4h-4M3 21h18"
+                          />
+                        </svg>
+                      </div>
+                      <div class="ml-4">
+                        <h4 class="text-lg font-semibold text-blue-900">
+                          Call Us
+                        </h4>
+                        <p class="text-gray-500">+1 5589 55488 55</p>
+                      </div>
+                    </div>
+                    <!-- Email -->
+                    <div class="flex items-center mb-6">
+                      <div class="flex-shrink-0 bg-blue-100 p-3 rounded-full">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="h-6 w-6 text-blue-500"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M3 3h18M3 8h18M3 13h18M3 18h18"
+                          />
+                        </svg>
+                      </div>
+                      <div class="ml-4">
+                        <h4 class="text-lg font-semibold text-blue-900">
+                          Email Us
+                        </h4>
+                        <p class="text-gray-500">info@example.com</p>
+                      </div>
+                    </div>
+                    <!-- Google Map -->
+                    <iframe
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29489.59195487418!2d91.80938240000005!3d22.49671590000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30acd670f17feab5%3A0x2ffd699cbc269ac1!2sHathazari!5e0!3m2!1sen!2sbd!4v1730519612945!5m2!1sen!2sbd"
+                      class="w-full h-64 mt-4 border-0 rounded-lg"
+                      allowfullscreen=""
+                      loading="lazy"
+                      referrerpolicy="no-referrer-when-downgrade"
+                    ></iframe>
+                  </div>
+
+                  <!-- Contact Form -->
+                  <div class="w-full h-full bg-white rounded-lg shadow-md p-8">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                      <input
+                        type="text"
+                        placeholder="Your Name"
+                        class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                      />
+                      <input
+                        type="email"
+                        placeholder="Your Email"
+                        class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                      />
+                    </div>
+                    <input
+                      type="text"
+                      placeholder="Subject"
+                      class="w-full p-3 mt-4 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    />
+                    <textarea
+                      placeholder="Message"
+                      class="w-full p-3 mt-4 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 h-32"
+                    ></textarea>
+                    <button
+                      class="mt-4 w-full md:w-auto bg-blue-500 text-white font-semibold py-3 px-6 rounded-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
+                    >
+                      Send Message
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <!-- Footer Section -->
+            <footer class="bg-gray-100 py-16">
+              <div class="container mx-auto px-4">
+                <!-- Newsletter -->
+                <div class="text-center mb-10">
+                  <h2 class="text-2xl font-bold text-blue-900">
+                    Join Our Newsletter
+                  </h2>
+                  <p class="text-gray-500 mt-2">
+                    Subscribe to our newsletter and receive the latest news
+                    about our products and services!
+                  </p>
+                  <div class="mt-6 max-w-xl mx-auto">
+                    <div
+                      class="flex items-center bg-white shadow-lg rounded-full px-4 py-2"
+                    >
+                      <input
+                        type="email"
+                        placeholder="Enter your email"
+                        class="w-full p-2 text-gray-700 rounded-l-full focus:outline-none"
+                      />
+                      <button
+                        class="bg-blue-500 text-white font-semibold px-6 py-2 rounded-full hover:bg-blue-600"
+                      >
+                        Subscribe
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Footer Links -->
+                <div
+                  class="flex flex-col lg:flex-row lg:justify-between lg:items-start text-center lg:text-left gap-10"
+                >
+                  <!-- Contact Info -->
+                  <div class="lg:w-1/4">
+                    <h3 class="text-xl font-semibold text-blue-900">ARSHA</h3>
+                    <p class="text-gray-500 mt-2">
+                      A108 Adam Street<br />New York, NY 535022
+                    </p>
+                    <p class="mt-2">
+                      <strong>Phone:</strong> +1 5589 55488 55<br />
+                      <strong>Email:</strong> info@example.com
+                    </p>
+                  </div>
+
+                  <!-- Useful Links -->
+                  <div class="lg:w-1/4">
+                    <h3 class="text-xl font-semibold text-blue-900">
+                      Useful Links
+                    </h3>
+                    <ul class="mt-2 space-y-2">
+                      <li>
+                        <a href="#" class="text-gray-500 hover:text-blue-600"
+                          >Home</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#" class="text-gray-500 hover:text-blue-600"
+                          >About us</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#" class="text-gray-500 hover:text-blue-600"
+                          >Services</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#" class="text-gray-500 hover:text-blue-600"
+                          >Terms of service</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+
+                  <!-- Our Services -->
+                  <div class="lg:w-1/4">
+                    <h3 class="text-xl font-semibold text-blue-900">
+                      Our Services
+                    </h3>
+                    <ul class="mt-2 space-y-2">
+                      <li>
+                        <a href="#" class="text-gray-500 hover:text-blue-600"
+                          >Web Design</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#" class="text-gray-500 hover:text-blue-600"
+                          >Web Development</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#" class="text-gray-500 hover:text-blue-600"
+                          >Product Management</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#" class="text-gray-500 hover:text-blue-600"
+                          >Marketing</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+
+                  <!-- Follow Us -->
+                  <div class="lg:w-1/4">
+                    <h3 class="text-xl font-semibold text-blue-900">
+                      Follow Us
+                    </h3>
+                    <p class="text-gray-500 mt-2">
+                      Cras fermentum odio eu feugiat lide par naso tierra
+                    </p>
+                    <div
+                      class="flex justify-center items-center lg:justify-start space-x-4"
+                    >
+                      <!-- X icon -->
+                      <div
+                        class="w-12 h-12 rounded-full border border-gray-300 flex items-center justify-center"
+                      >
+                        <i class="fab fa-x-twitter text-gray-500 text-xl"></i>
+                      </div>
+
+                      <!-- Facebook icon -->
+                      <div
+                        class="w-12 h-12 rounded-full border border-gray-300 flex items-center justify-center"
+                      >
+                        <i class="fab fa-facebook-f text-gray-500 text-xl"></i>
+                      </div>
+
+                      <!-- Instagram icon -->
+                      <div
+                        class="w-12 h-12 rounded-full border border-gray-300 flex items-center justify-center"
+                      >
+                        <i class="fab fa-instagram text-gray-500 text-xl"></i>
+                      </div>
+
+                      <!-- LinkedIn icon -->
+                      <div
+                        class="w-12 h-12 rounded-full border border-gray-300 flex items-center justify-center"
+                      >
+                        <i class="fab fa-linkedin-in text-gray-500 text-xl"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Footer Bottom -->
+                <div
+                  class="border-t border-gray-200 mt-10 pt-6 text-center text-gray-500 text-sm"
+                >
+                  © Copyright <strong>Arsha</strong> All Rights Reserved
+                  <br />
+                  Designed by
+                  <a href="#" class="text-blue-600 hover:underline"
+                    >BootstrapMade</a
+                  >
+                </div>
+              </div>
+            </footer>
+
+            <!-- section ten end -->
+          </div>
+        </div>
+
+        <!-- section eight end -->
       </div>
     </section>
     <!-- section seven end -->
+    <!-- section eight start -->
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
     <script src="../index.js"></script>
   </body>
 </html>
