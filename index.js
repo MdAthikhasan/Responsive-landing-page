@@ -85,3 +85,28 @@ const dots = document.querySelectorAll(".dot");
 dots.forEach((dot) => {
   dot.addEventListener("click", () => {});
 });
+
+// window.addEventListener("scroll", () => {
+//   document
+//     .querySelector(".page-animation")
+//     .classList.add("before:animate-progress");
+// });
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      const animateItems = document.querySelectorAll(".animate-item");
+      animateItems.forEach((item) => {
+        // Get the animation type from the data attribute
+        const animationType = item.getAttribute("data-animation");
+
+        // Add the animation class to trigger the effect
+        entry.target.classList.add(animationType);
+      });
+    }
+  });
+});
+
+document
+  .querySelectorAll(".animate-item")
+  .forEach((el) => observer.observe(el));

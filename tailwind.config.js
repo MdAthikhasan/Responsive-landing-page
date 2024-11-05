@@ -37,7 +37,7 @@ export const theme = {
         "100%": { transform: "translateX(-100%)" },
       },
       scale_up: {
-        "0%": { transform: "scale(0.5)", opacity: 0.5 },
+        "0%": { transform: "scale(0.5)" },
         "100%": { transform: "scale(1)", opacity: 1 },
       },
 

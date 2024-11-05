@@ -17,7 +17,7 @@
 
   <body>
     <section>
-      <div class="w-full h-screen bg-[#37517E]">
+      <div class="w-full min-h-screen bg-[#37517E]">
         <div class="container relative mx-auto">
           <header>
             <div class="flex justify-between items-center py-4 text-white">
@@ -93,11 +93,11 @@
           <div
             class="flex lg:flex-row flex-col-reverse justify-between items-center gap-6 text-white"
           >
-            <div class="animate-smooth">
-              <h1 class="text-5xl font-bold leading-12">
+            <div class="animate-smooth lg:p-0 p-3">
+              <h1 class="sm:text-5xl text-2xl font-bold leading-12">
                 Better Solutions For Your Business
               </h1>
-              <p class="font-semibold text-2xl my-6">
+              <p class="font-semibold sm:text-2xl text-lg my-6">
                 We are team of talented designers making websites with Bootstrap
               </p>
               <div class="flex items-center">
@@ -132,7 +132,7 @@
               </div>
             </div>
 
-            <div class="">
+            <div class="lg:p-0 p-3">
               <img class="animate-smooth" src="./images/hero-img.png" alt="" />
             </div>
           </div>
@@ -188,7 +188,7 @@
         <div
           class="flex lg:flex-row flex-col justify-between gap-5 mt-14 items-center"
         >
-          <div class="animate-downUp">
+          <div class="lg:w-1/2 animate-downUp p-3">
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -257,7 +257,7 @@
               </div>
             </div>
           </div>
-          <div class="animate-downUp">
+          <div class="lg:w-1/2 animate-downUp p-3">
             <p>
               Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
               irure dolor in reprehenderit in voluptate velit esse cillum dolore
@@ -294,7 +294,7 @@
       <div
         class="container flex lg:flex-row flex-col-reverse justify-between items-center bg-[]"
       >
-        <div class="lg:w-[55%] py-10">
+        <div class="lg:w-[55%] lg:py-10 p-3">
           <h1 class="text-4xl font-normal text-[#37517E]">
             Eum ipsam laborum deleniti
             <strong class="font-extrabold text-[#37517E]">
@@ -419,7 +419,7 @@
         class="container flex lg:flex-row flex-col justify-between items-center gap-5 py-14"
       >
         <div class=""><img src="./images/skills.png" alt="" /></div>
-        <div class="">
+        <div class="p-3">
           <h1 class="text-4xl font-bold text-[#37517e]">
             Voluptatem dignissimos provident quasi corporis voluptas .
           </h1>
@@ -438,7 +438,7 @@
             </div>
             <div class="w-full progress-bar h-[10px] bg-[#EBEDF2]">
               <div
-                class="w-12/12 h-full relative before:absolute before:left-0 before:top-0 before:w-full before:h-full before:animate-progress before:bg-[#37517E]"
+                class="animate-item w-12/12 h-full relative before:absolute before:left-0 before:top-0 before:w-full before:h-full before:bg-[#37517E]"
               ></div>
             </div>
           </div>
@@ -454,7 +454,7 @@
 
             <div class="w-full progress-bar h-[10px] bg-[#EBEDF2]">
               <div
-                class="w-3/12 h-full relative before:absolute before:left-0 before:top-0 before:w-full before:h-full before:animate-progress before:bg-[#37517E]"
+                class="animate-item w-3/12 h-full relative before:absolute before:left-0 before:top-0 before:w-full before:h-full before:bg-[#37517E]"
               ></div>
             </div>
           </div>
@@ -470,7 +470,8 @@
 
             <div class="w-full progress-bar h-[10px] bg-[#EBEDF2]">
               <div
-                class="w-5/12 h-full relative before:absolute before:left-0 before:top-0 before:w-full before:h-full before:animate-progress before:bg-[#37517E]"
+                class="animate-item w-5/12 h-full relative before:absolute before:left-0 before:top-0 before:w-full before:h-full before:bg-[#37517E]"
+                data-animation="before:animate-progress"
               ></div>
             </div>
           </div>
@@ -507,9 +508,7 @@
           consectetur velit
         </p>
 
-        <div
-          class="flex lg:flex-row flex-col justify-between items-center gap-6 mt-4"
-        >
+        <div class="grid gap-6 mt-4 md:grid-cols-2 lg:grid-cols-4 p-3">
           <div
             class="group bg-[#FFFFFF] hover:-translate-y-3 transition-transform duration-300 ease-linear drop-shadow-2xl px-5 py-7"
           >
@@ -530,13 +529,13 @@
             <h1 class="group-hover:text-[#37517e] font-bold text-xl py-5">
               Lorem isput
             </h1>
-            <p class="">
+            <p>
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum,
               consectetur.
             </p>
           </div>
           <div
-            class="group bg-[#FFFFFF] hover:-translate-y-3 transition-transform duration-150 ease-in drop-shadow-2xl px-5 py-7"
+            class="group bg-[#FFFFFF] hover:-translate-y-3 transition-transform duration-300 ease-linear drop-shadow-2xl px-5 py-7"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -555,13 +554,13 @@
             <h1 class="group-hover:text-[#37517e] font-bold text-xl py-5">
               Lorem isput
             </h1>
-            <p class="">
+            <p>
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum,
               consectetur.
             </p>
           </div>
           <div
-            class="group bg-[#FFFFFF] hover:-translate-y-3 transition-transform duration-150 ease-in drop-shadow-2xl px-5 py-7"
+            class="group bg-[#FFFFFF] hover:-translate-y-3 transition-transform duration-300 ease-linear drop-shadow-2xl px-5 py-7"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -580,13 +579,13 @@
             <h1 class="group-hover:text-[#37517e] font-bold text-xl py-5">
               Lorem isput
             </h1>
-            <p class="">
+            <p>
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum,
               consectetur.
             </p>
           </div>
           <div
-            class="group bg-[#FFFFFF] hover:-translate-y-3 transition-transform duration-150 ease-in drop-shadow-2xl px-5 py-7"
+            class="group bg-[#FFFFFF] hover:-translate-y-3 transition-transform duration-300 ease-linear drop-shadow-2xl px-5 py-7"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -605,11 +604,13 @@
             <h1 class="group-hover:text-[#37517e] font-bold text-xl py-5">
               Lorem isput
             </h1>
-            <p class="">
+            <p>
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum,
               consectetur.
             </p>
           </div>
+
+          <!-- Duplicate the above div three more times for a total of four boxes -->
         </div>
       </div>
     </section>
@@ -618,25 +619,26 @@
 
     <section>
       <div
-        class="relative w-full bg-[#37588C] h-screen bg-fixed bg-cover bg-center"
+        class="w-full bg-[#37588C] h-screen bg-fixed bg-cover bg-center"
         style="background-image: url(./images/cta-bg.jpg)"
       >
-        <!-- <div class="absolute inset-0 bg-black opacity-50"></div> -->
-        <!-- Overlay -->
         <div
-          class="container animate-scale_up flex md:flex-row flex-col justify-between items-center h-1/2 relative"
+          class="container animate-item flex lg:flex-row flex-col lg:justify-between justify-center items-center gap-5 h-1/2 p-3 relative"
+          data-animation="animate-scale_up"
         >
-          <div class="w-3/4 text-white">
-            <h1 class="text-3xl font-bold my-2">Call To Action</h1>
-            <p>
+          <!-- <div class="absolute inset-0 bg-black z-[-1] opacity-50"></div> -->
+          <div class="lg:w-3/4 text-white">
+            <h1 class="text-3xl lg:text-start text-center font-bold my-2">
+              Call To Action
+            </h1>
+            <p class="text-center lg:text-start">
               Duis aute irure dolor in reprehenderit in voluptate velit esse
               cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
               cupidatat non proident, sunt in culpa qui officia deserunt mollit
               anim id est laborum.
             </p>
-            aass
           </div>
-          <div class="w-1/4">
+          <div class="lg:w-1/4">
             <button
               class="block mx-auto rounded-full border text-xl font-medium border-white hover:bg-[#37588C] transition duration-300 hover:border-none text-white px-8 py-3"
             >
@@ -644,6 +646,9 @@
             </button>
           </div>
         </div>
+
+        <!-- Overlay -->
+
         <div class="h-full bg-white">
           <div class="container">
             <div class="text-center">
@@ -664,8 +669,10 @@
                 <li class="ul-item px-5 py-2 hover:li-class">Web</li>
               </ul>
             </div>
-            <div class="flex justify-between items-center gap-3">
-              <div class="flex flex-col gap-3">
+            <div
+              class="flex md:flex-wrap md:flex-row lg:flex-nowrap flex-col justify-between items-center gap-3"
+            >
+              <div class="flex md:w-1/2 lg:w-auto flex-col gap-3">
                 <div class="img-container-class group">
                   <img
                     class="cursor-pointer"
@@ -719,7 +726,7 @@
                   />
                 </div>
               </div>
-              <div class="flex flex-col gap-3">
+              <div class="flex md:w-1/2 lg:w-auto flex-col gap-3">
                 <div class="img-container-class group hover-box-container">
                   <img src="./images/masonry-portfolio-2.jpg" alt="" />
                 </div>
